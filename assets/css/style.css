@@ -6,6 +6,20 @@
 body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
+}
+
+.button{
+    display: inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 20px;
 }
 
 /*Menu*/
@@ -97,18 +111,6 @@ header{
     text-transform: uppercase;
     margin-top: 20px;
 }
-.banner a{
-    display: block;
-    background-color: #b28756;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
-    padding: 10px 30px;
-    font-weight: 600;
-    margin-top: 30px;
-    border-radius: 20px;
-}
 .banner .sliders-pointers{
     width: 100vw;
     height: 20px;
@@ -129,4 +131,74 @@ header{
 }
 .banner .pointer.active{
     background-color: #b28756;
+}
+
+/*Section do site (Interface)*/
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .section-title{
+    font-size: 20px;    
+}
+.default .section-desc{
+    font-size: 13px;
+    color: #aeaeae;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.default .section-body{
+    margin: auto;
+    max-width: 1140px;
+}
+.default.light {
+    background-color: #f7f7f7;
+}
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+}
+.default.dark {
+    background-color: #000;
+}
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;
+}
+
+/*Section do site (área específica)*/
+
+/*About*/
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus--left{
+    flex: 1;
+}
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #242424;
+}
+.section-aboutus--right{
+    width: 520px;
+    text-align: center;
+}
+.section-aboutus--right img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+/*Services*/
+.section-services{
+    display: flex;
+}
+.section-service{
+    flex: 1;
 }
